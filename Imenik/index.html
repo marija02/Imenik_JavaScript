@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<title>Imenik</title>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stil/imenik.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="stil/imenik.css">
+</head>
+
+<body>
+
+    <div style="text-align:center">
+        <h2 style="color:whitesmoke">Imenik</h2>
+
+    </div>
+
+    <div class="autocomplete" style="width:500px;">
+        <input id="searchInput" type="text" autocomplete="off" name="search" placeholder="Search..." />
+        <input id="submitButton" type="submit" value="Submit" />
+    </div>
+
+
+    <div class="tab">
+        <button class="tablinks" onclick="document.location = 'uputstvo.html'">Uputstvo</button>
+        <button class="tablinks" onclick="document.location = 'telefoni.html'">Važni telefoni</button>
+        <button class="tablinks" onclick="document.location = 'index.html'">Imenik</button>
+    </div>
+
+
+
+</body>
+<script type="text/javascript" src="imenik.js"></script>
+<script>
+    autocomplete(document.getElementById("searchInput"));
+</script>
+
+</html>
